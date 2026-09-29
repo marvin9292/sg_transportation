@@ -1,0 +1,75 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SG Transportation",
+        "description": "Enter your personal LTA DataMall AccountKey. The key is stored only in your Home Assistant config entry and is not included in the integration source code.",
+        "data": {
+          "account_key": "LTA DataMall AccountKey"
+        },
+        "data_description": {
+          "account_key": "Your personal AccountKey from LTA DataMall."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate SG Transportation",
+        "description": "Your LTA DataMall AccountKey is missing or no longer valid. Enter a valid AccountKey.",
+        "data": {
+          "account_key": "LTA DataMall AccountKey"
+        }
+      },
+      "reconfigure": {
+        "title": "Update LTA DataMall AccountKey",
+        "description": "Enter the replacement LTA DataMall AccountKey.",
+        "data": {
+          "account_key": "LTA DataMall AccountKey"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The LTA DataMall AccountKey is invalid.",
+      "cannot_connect": "Unable to connect to LTA DataMall. Please try again.",
+      "unknown": "Unexpected response from LTA DataMall."
+    },
+    "abort": {
+      "single_instance_allowed": "Only one SG Transportation entry is allowed.",
+      "reauth_successful": "LTA DataMall AccountKey updated successfully.",
+      "reconfigure_successful": "LTA DataMall AccountKey updated successfully."
+    }
+  },
+  "config_subentries": {
+    "bus_service": {
+      "title": "SG Bus Service",
+      "initiate_flow": {
+        "user": "Add new bus service"
+      },
+      "step": {
+        "user": {
+          "title": "Add new bus service",
+          "data": {
+            "bus_stop_code": "Stop ID",
+            "description": "Stop Name",
+            "service_no": "Bus Number"
+          }
+        }
+      },
+      "abort": {
+        "already_configured": "This bus service already exists."
+      }
+    },
+    "train_service_alerts": {
+      "title": "New Train Service Alert",
+      "initiate_flow": {
+        "user": "Add train service alerts"
+      },
+      "step": {
+        "user": {
+          "title": "Add train service alerts"
+        }
+      },
+      "abort": {
+        "already_configured": "Train service alerts already added."
+      }
+    }
+  }
+}
