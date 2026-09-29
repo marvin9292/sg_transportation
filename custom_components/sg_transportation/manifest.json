@@ -1,0 +1,11 @@
+{
+  "domain": "sg_transportation",
+  "name": "SG Transportation",
+  "version": "1.1.0",
+  "config_flow": true,
+  "single_config_entry": true,
+  "iot_class": "cloud_polling",
+  "codeowners": ["@marvin9292"],
+  "documentation": "https://github.com/marvin9292/sg_transportation",
+  "issue_tracker": "https://github.com/marvin9292/sg_transportation/issues"
+}
