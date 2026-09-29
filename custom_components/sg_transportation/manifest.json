@@ -5,7 +5,5 @@
   "config_flow": true,
   "single_config_entry": true,
   "iot_class": "cloud_polling",
-  "codeowners": ["@marvin9292"],
-  "documentation": "https://github.com/marvin9292/sg_transportation",
-  "issue_tracker": "https://github.com/marvin9292/sg_transportation/issues"
+  "codeowners": ["@marvin9292"]
 }
